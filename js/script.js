@@ -18,4 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".reveal").forEach((el) => {
     observer.observe(el);
   });
+
+  // Showcase Slider Functionality
+  const slider = document.getElementById("showcase-slider");
+  const leftBtn = document.getElementById("slide-left");
+  const rightBtn = document.getElementById("slide-right");
+
+  if (slider && leftBtn && rightBtn) {
+    leftBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: -320, behavior: "smooth" });
+    });
+
+    rightBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: 320, behavior: "smooth" });
+    });
+  }
 });

@@ -347,11 +347,13 @@
           </div>
           <div class="reveal stagger-1 flex gap-2">
             <button
+              id="slide-left"
               class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors"
             >
               <iconify-icon icon="solar:arrow-left-linear"></iconify-icon>
             </button>
             <button
+              id="slide-right"
               class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors"
             >
               <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
@@ -360,10 +362,10 @@
         </div>
 
         <!-- Showcase Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div id="showcase-slider" class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory">
           <!-- Item 1 -->
           <div
-            class="reveal group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
+            class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] reveal group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
           >
             <img
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"
@@ -395,7 +397,7 @@
 
           <!-- Item 2 -->
           <div
-            class="reveal stagger-1 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
+            class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] reveal stagger-1 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
           >
             <img
               src="https://images.unsplash.com/photo-1576678927484-cc907957088c?q=80&amp;w=2787&amp;auto=format&amp;fit=crop"
@@ -427,7 +429,7 @@
 
           <!-- Item 3 -->
           <div
-            class="reveal stagger-2 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer md:col-span-2 lg:col-span-1"
+            class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] reveal stagger-2 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
           >
             <img
               src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&amp;w=2940&amp;auto=format&amp;fit=crop"
@@ -456,8 +458,153 @@
               </p>
             </div>
           </div>
+            </div>
+          </div>
+
+          <!-- Item 4 (New) -->
+          <div
+            class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] reveal stagger-3 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=2750&auto=format&fit=crop"
+              loading="lazy"
+              alt="HIIT Studio"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90 group-hover:opacity-70 transition-opacity"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-8 w-full">
+              <div
+                class="w-full h-[1px] bg-white/20 mb-6 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+              ></div>
+              <span class="text-xs font-mono text-lime-400 mb-2 block"
+                >Zone 04</span
+              >
+              <h3 class="text-2xl text-white font-medium tracking-tight mb-2">
+                HIIT Studio
+              </h3>
+              <p
+                class="text-sm text-zinc-300 font-light opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500"
+              >
+                Specialized zones for high-intensity interval training to torch calories.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 (New) -->
+          <div
+            class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] reveal stagger-1 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1599447332720-d36c39d8932f?q=80&w=2940&auto=format&fit=crop"
+              loading="lazy"
+              alt="Yoga & Mobility"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90 group-hover:opacity-70 transition-opacity"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-8 w-full">
+              <div
+                class="w-full h-[1px] bg-white/20 mb-6 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+              ></div>
+              <span class="text-xs font-mono text-lime-400 mb-2 block"
+                >Zone 05</span
+              >
+              <h3 class="text-2xl text-white font-medium tracking-tight mb-2">
+                Yoga & Mobility
+              </h3>
+              <p
+                class="text-sm text-zinc-300 font-light opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500"
+              >
+                Dedicated calm studio space for flexibility, mobility, and mindfulness.
+              </p>
+            </div>
+          </div>
+
+           <!-- Item 6 (New) -->
+          <div
+            class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] reveal stagger-2 group relative h-[500px] rounded-xl overflow-hidden cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1623874514711-0f321325f318?q=80&w=2940&auto=format&fit=crop"
+              loading="lazy"
+              alt="Private Pods"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale group-hover:grayscale-0"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-90 group-hover:opacity-70 transition-opacity"
+            ></div>
+            <div class="absolute bottom-0 left-0 p-8 w-full">
+              <div
+                class="w-full h-[1px] bg-white/20 mb-6 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"
+              ></div>
+              <span class="text-xs font-mono text-lime-400 mb-2 block"
+                >Zone 06</span
+              >
+              <h3 class="text-2xl text-white font-medium tracking-tight mb-2">
+                PT Pods
+              </h3>
+              <p
+                class="text-sm text-zinc-300 font-light opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500"
+              >
+                Private zones for focused 1-on-1 coaching sessions without distractions.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-black relative border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-normal text-white tracking-tight mb-12 text-center reveal">
+                Common Questions
+            </h2>
+            <div class="space-y-4 reveal stagger-1">
+                <details class="group bg-zinc-900/30 border border-white/5 rounded-2xl open:bg-zinc-900/50 transition-colors">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                        <span class="text-white font-medium">What are your operating hours?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="text-lime-400 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-6 pb-6 text-zinc-400 text-sm font-light leading-relaxed">
+                        We are open from 5:00 AM to 11:00 PM on weekdays, and 6:00 AM to 9:00 PM on weekends.
+                    </div>
+                </details>
+
+                <details class="group bg-zinc-900/30 border border-white/5 rounded-2xl open:bg-zinc-900/50 transition-colors">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                        <span class="text-white font-medium">Do you offer personal training?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="text-lime-400 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-6 pb-6 text-zinc-400 text-sm font-light leading-relaxed">
+                        Yes, we have elite certified trainers available for 1-on-1 sessions. Our 4:1 small group training is also included in select memberships.
+                    </div>
+                </details>
+
+                <details class="group bg-zinc-900/30 border border-white/5 rounded-2xl open:bg-zinc-900/50 transition-colors">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                        <span class="text-white font-medium">Is there parking available?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="text-lime-400 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-6 pb-6 text-zinc-400 text-sm font-light leading-relaxed">
+                        Absolutely. We have dedicated parking spots for members right in front of the facility at Marine Drive.
+                    </div>
+                </details>
+
+                <details class="group bg-zinc-900/30 border border-white/5 rounded-2xl open:bg-zinc-900/50 transition-colors">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer list-none">
+                        <span class="text-white font-medium">What amenities do you have?</span>
+                        <iconify-icon icon="solar:alt-arrow-down-linear" class="text-lime-400 group-open:rotate-180 transition-transform"></iconify-icon>
+                    </summary>
+                    <div class="px-6 pb-6 text-zinc-400 text-sm font-light leading-relaxed">
+                        Our facility includes luxury locker rooms with showers, a towel service, a post-workout fuel bar, and recovery zones with saunas.
+                    </div>
+                </details>
+            </div>
+        </div>
     </section>
 
     <!-- Address & Contact Hub -->
@@ -643,6 +790,135 @@
       </div>
     </section>
 
+    </section>
+
+    <!-- Reviews Carousel -->
+    <section id="reviews" class="py-24 bg-zinc-950 overflow-hidden border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 mb-12 text-center reveal">
+             <span class="text-lime-400 text-xs font-mono tracking-widest uppercase mb-2 block">Community</span>
+             <h2 class="text-3xl md:text-4xl font-normal text-white tracking-tight">Ernakulam's Elite</h2>
+        </div>
+        
+        <div class="relative w-full overflow-hidden">
+            <div class="flex gap-6 animate-marquee w-max hover:[animation-play-state:paused]">
+                <!-- Duplicate this block for seamless loop -->
+               <!-- Card 1 -->
+                <div class="w-[350px] bg-zinc-900/40 border border-white/5 p-6 rounded-2xl shrink-0 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 text-lime-400 mb-4">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-300 text-sm font-light leading-relaxed mb-6">"The best gym in Kochi, hands down. The equipment is top-tier and the biometric tracking helps me stay on top of my progress."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white text-xs font-bold">AK</div>
+                        <div>
+                            <h4 class="text-white text-sm font-medium">Arjun K.</h4>
+                            <p class="text-zinc-500 text-xs">Member since '23</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="w-[350px] bg-zinc-900/40 border border-white/5 p-6 rounded-2xl shrink-0 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 text-lime-400 mb-4">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-300 text-sm font-light leading-relaxed mb-6">"Finally a place that focuses on recovery as much as lifting. The infrared sauna is a game changer after heavy leg days."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white text-xs font-bold">PM</div>
+                        <div>
+                            <h4 class="text-white text-sm font-medium">Priya M.</h4>
+                            <p class="text-zinc-500 text-xs">Member since '24</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="w-[350px] bg-zinc-900/40 border border-white/5 p-6 rounded-2xl shrink-0 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 text-lime-400 mb-4">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-300 text-sm font-light leading-relaxed mb-6">"The small group training sessions are intense but amazing. Coach Rahul really knows his stuff. Highly recommended!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white text-xs font-bold">SD</div>
+                        <div>
+                            <h4 class="text-white text-sm font-medium">Sanjay D.</h4>
+                            <p class="text-zinc-500 text-xs">Member since '23</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="w-[350px] bg-zinc-900/40 border border-white/5 p-6 rounded-2xl shrink-0 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 text-lime-400 mb-4">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-300 text-sm font-light leading-relaxed mb-6">"Premium vibes and serious training. It's not just a gym, it's a lifestyle upgrade. Love the fuel bar too."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white text-xs font-bold">ME</div>
+                        <div>
+                            <h4 class="text-white text-sm font-medium">Meera E.</h4>
+                            <p class="text-zinc-500 text-xs">Member since '24</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Card 5 -->
+                <div class="w-[350px] bg-zinc-900/40 border border-white/5 p-6 rounded-2xl shrink-0 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 text-lime-400 mb-4">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-300 text-sm font-light leading-relaxed mb-6">"Fantastic location at Marine Drive. Parking is easy, and the view ain't bad either. 10/10 experience."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white text-xs font-bold">VJ</div>
+                        <div>
+                            <h4 class="text-white text-sm font-medium">Vivek J.</h4>
+                            <p class="text-zinc-500 text-xs">Member since '22</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Repeat for seamless (optional, css handles simple loop usually but duplication helps smoothness) -->
+                  <!-- Card 1 Duplicate -->
+                <div class="w-[350px] bg-zinc-900/40 border border-white/5 p-6 rounded-2xl shrink-0 backdrop-blur-sm">
+                    <div class="flex items-center gap-1 text-lime-400 mb-4">
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                        <iconify-icon icon="solar:star-bold" width="16"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-300 text-sm font-light leading-relaxed mb-6">"The best gym in Kochi, hands down. The equipment is top-tier and the biometric tracking helps me stay on top of my progress."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-white text-xs font-bold">AK</div>
+                        <div>
+                            <h4 class="text-white text-sm font-medium">Arjun K.</h4>
+                            <p class="text-zinc-500 text-xs">Member since '23</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-black border-t border-white/5 py-12">
       <div class="max-w-7xl mx-auto px-6">
@@ -664,16 +940,50 @@
               </div>
               KINETIC
             </a>
-            <p class="text-zinc-500 text-sm font-light max-w-xs">
+            <p class="text-zinc-500 text-sm font-light max-w-xs mb-6">
               Redefining human performance through technology, design, and
               science.
             </p>
+            <div class="flex gap-4">
+                <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition-colors">
+                    <iconify-icon icon="brandico:instagram" width="14"></iconify-icon>
+                </a>
+                <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition-colors">
+                    <iconify-icon icon="brandico:twitter-bird" width="14"></iconify-icon>
+                </a>
+                <a href="#" class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-zinc-400 hover:bg-white hover:text-black transition-colors">
+                    <iconify-icon icon="brandico:linkedin" width="14"></iconify-icon>
+                </a>
+            </div>
           </div>
 
-          <div class="flex gap-8 text-sm font-light text-zinc-400">
-            <a href="#" class="hover:text-white transition-colors">Instagram</a>
-            <a href="#" class="hover:text-white transition-colors">Twitter</a>
-            <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-12 text-sm font-light">
+             <div>
+                <h4 class="text-white font-medium mb-4">Company</h4>
+                <div class="flex flex-col gap-2 text-zinc-400">
+                    <a href="#" class="hover:text-lime-400 transition-colors">About Us</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Careers</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Press</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Contact</a>
+                </div>
+             </div>
+             <div>
+                <h4 class="text-white font-medium mb-4">Resources</h4>
+                <div class="flex flex-col gap-2 text-zinc-400">
+                    <a href="#" class="hover:text-lime-400 transition-colors">Membership</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Class Schedule</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Trainers</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Blog</a>
+                </div>
+             </div>
+             <div class="hidden lg:block">
+                <h4 class="text-white font-medium mb-4">Legal</h4>
+                <div class="flex flex-col gap-2 text-zinc-400">
+                    <a href="#" class="hover:text-lime-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-lime-400 transition-colors">Cookie Policy</a>
+                </div>
+             </div>
           </div>
         </div>
 
