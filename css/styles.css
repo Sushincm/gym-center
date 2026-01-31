@@ -134,3 +134,39 @@ details[open] summary ~ * {
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* Owl Carousel Custom Styles */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  display: none !important;
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.owl-carousel .owl-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.owl-carousel .owl-dot.active {
+  background: #a3e635;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.owl-carousel .owl-item {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.owl-carousel .owl-item.active {
+  opacity: 1;
+}

@@ -18,19 +18,41 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".reveal").forEach((el) => {
     observer.observe(el);
   });
+});
 
-  // Showcase Slider Functionality
-  const slider = document.getElementById("showcase-slider");
-  const leftBtn = document.getElementById("slide-left");
-  const rightBtn = document.getElementById("slide-right");
+// Initialize Owl Carousel for Showcase Slider (after DOM and jQuery loaded)
+$(document).ready(function () {
+  // Showcase Slider with Owl Carousel
+  $("#showcase-slider").owlCarousel({
+    loop: true,
+    margin: 24,
+    nav: true,
+    navText: [
+      '<iconify-icon icon="solar:arrow-left-linear"></iconify-icon>',
+      '<iconify-icon icon="solar:arrow-right-linear"></iconify-icon>',
+    ],
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      1024: {
+        items: 3,
+      },
+    },
+  });
 
-  if (slider && leftBtn && rightBtn) {
-    leftBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: -320, behavior: "smooth" });
-    });
+  // Custom navigation buttons
+  $("#slide-left").click(function () {
+    $("#showcase-slider").trigger("prev.owl.carousel");
+  });
 
-    rightBtn.addEventListener("click", () => {
-      slider.scrollBy({ left: 320, behavior: "smooth" });
-    });
-  }
+  $("#slide-right").click(function () {
+    $("#showcase-slider").trigger("next.owl.carousel");
+  });
 });
