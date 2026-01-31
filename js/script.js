@@ -31,7 +31,7 @@ $(document).ready(function () {
       '<iconify-icon icon="solar:arrow-left-linear"></iconify-icon>',
       '<iconify-icon icon="solar:arrow-right-linear"></iconify-icon>',
     ],
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {

@@ -156,17 +156,14 @@ details[open] summary ~ * {
   transition: all 0.3s ease;
 }
 
-.owl-carousel .owl-dot.active {
-  background: #a3e635;
-  width: 24px;
-  border-radius: 4px;
-}
-
 .owl-carousel .owl-item {
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
 
-.owl-carousel .owl-item.active {
+.owl-carousel .owl-item.active span {
   opacity: 1;
+}
+.owl-carousel .owl-dot.active span {
+  background: #a3e635 !important;
 }
