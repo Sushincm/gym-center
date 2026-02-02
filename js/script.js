@@ -26,12 +26,12 @@ $(document).ready(function () {
   $("#showcase-slider").owlCarousel({
     loop: true,
     margin: 24,
-    nav: true,
+    nav: false,
     navText: [
       '<iconify-icon icon="solar:arrow-left-linear"></iconify-icon>',
       '<iconify-icon icon="solar:arrow-right-linear"></iconify-icon>',
     ],
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {
